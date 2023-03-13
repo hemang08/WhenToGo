@@ -1,24 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="main.js"></script>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
-<style>
-    .pass{
-        color: green;
-    }
-    .fail{
-        color: red;
-    }
-</style>
+
 <body>
-    <input type="text" placeholder="OUT TIME" id="out">
-    <input type="text" placeholder="Total Present Hours" id="totalh">
-    <button onclick="cacl()">Calculate</button>
-    <h1 class="" id="output"></h1>
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="bodysss d-flex flex-column">
+            <h1>When To Go</h1>
+            <input type="text" placeholder="OUT TIME" id="out" class=" text-center mt-2 p-2">
+            <input type="text" placeholder="Total Present Hours" class="text-center mt-2 p-2" id="totalh">
+            <button onclick="cacl()" id="btn" class="btn  mt-2">Calculate</button>
+            <h1 class="" id="output"></h1>
+        </div>
+        
+        <footer class="footer">
+            <button onclick= 'window.location.href = "./howtouse.html"'>
+                <h2>How to use!</h2>
+            </button>
+        </footer>
+    </div>
+        
 </body>
+
 </html>

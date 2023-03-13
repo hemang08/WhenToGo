@@ -22,22 +22,63 @@ function cacl(){
 
     var lastMinute = remaining%60;
     
+    
+
     outhour += 	lastHour;
     outminute += lastMinute;
     if(outminute>60){
         outhour++;
         outminute -=60;
     }
+    
+
+   
+    // console.log(lastHour);
+    // console.log(lastMinute);
 
     var d = new Date();
     let hour = d.getHours() <12 ? d.getHours() : d.getHours() - 12;
     
     let totalminute1 = d.getMinutes();
-    if(hour > outhour || (hour == outhour && totalminute1 > outminute) ){
-        alert("You can leave, You already done with hours \nYour Today Hour is: " +hour+"H:"+totalminute1+"M");
+    
+    console.log(hour, typeof(hour));
+    console.log(outhour, typeof(outhour));
+    if(hour > outhour || (hour == outhour && totalminute1 > outminute) ){    
+    Swal.fire({
+        text: "You can leave, You already done with hours",
+        imageUrl: 'https://i.redd.it/d4bezp9infx41.png',
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'Custom image',
+        width: 600,
+        padding: '3em',
+        color: '#716add',
+        background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
+        backdrop: `
+    rgba(0,0,123,0.4)`,
+    allowOutsideClick : false
+      })
     }
     else{
-        alert("Please  Wait Untill  \n"+ outhour+':'+outminute)
+        if(outhour>12){
+            outhour -=12;
+        }
+
+        Swal.fire({
+            title: "Please  Wait Untill  \n"+ outhour+':'+outminute,
+            // text: "Ubho ree \n"+ outhour+':'+outminute,
+            imageUrl: 'https://www.indianfilmhistory.com:3002/media/files_i/1605699272863ddhfi8tcwg.jpg',
+            imageWidth: 400,
+            imageHeight: 200,
+            imageAlt: 'Custom image',
+            width: 600,
+            padding: '3em',
+            color: '#716add',
+            background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
+            backdrop: `
+            rgba(0,0,123,0.4)`,
+            allowOutsideClick : false
+          })
     }
 
 }
