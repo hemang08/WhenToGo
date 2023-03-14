@@ -4,9 +4,12 @@ function cacl(){
     var totalh = document.getElementById("totalh").value.trim();
 
     // try{
-        var totalhour = totalh.split('H')[0];
-        var miniute = totalh.split('H').length > 1 ? isNaN(parseInt(totalh.split('H')[1].split('M')[0])) ? 0 : parseInt(totalh.split('H')[1].split('M')[0]) : parseInt(totalh.split('H')[0].split('M')[0]);
-
+        var HourStringFromTotalHour = totalh.split('H');
+        var totalhour = HourStringFromTotalHour[0].includes('M') ? 0 : parseInt(HourStringFromTotalHour[0]);
+        var miniuteStringFromTotalHour = HourStringFromTotalHour[0].includes('M') ? HourStringFromTotalHour[0] : HourStringFromTotalHour[1];
+        var miniute = miniuteStringFromTotalHour.includes('M') ? parseInt(miniuteStringFromTotalHour.split('M')[0]) : 0 ;
+    console.log(totalhour);
+    console.log(miniute);
         var totalminute = miniute + (parseInt(totalhour) * 60);
     
 
