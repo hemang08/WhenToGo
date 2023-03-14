@@ -3,15 +3,23 @@ function cacl(){
     var out = document.getElementById("out").value.trim();
     var totalh = document.getElementById("totalh").value.trim();
 
-    // try{
+    try{
         var HourStringFromTotalHour = totalh.split('H');
         var totalhour = HourStringFromTotalHour[0].includes('M') ? 0 : parseInt(HourStringFromTotalHour[0]);
         var miniuteStringFromTotalHour = HourStringFromTotalHour[0].includes('M') ? HourStringFromTotalHour[0] : HourStringFromTotalHour[1];
         var miniute = miniuteStringFromTotalHour.includes('M') ? parseInt(miniuteStringFromTotalHour.split('M')[0]) : 0 ;
-    console.log(totalhour);
-    console.log(miniute);
+
         var totalminute = miniute + (parseInt(totalhour) * 60);
-    
+    }
+    catch{
+        alert("Please enter valid format! check video below!")
+        return ;
+    }
+        if(isNaN(totalhour) || isNaN(totalminute)){
+            alert("Please enter valid format! check video below!")
+            return ;
+        }
+
 
     var outhour =  parseInt(out.split(':')[0]);
     var outminute = parseInt(out.split(':')[1]);
@@ -27,7 +35,7 @@ function cacl(){
 
     outhour += 	lastHour;
     outminute += lastMinute;
-    if(outminute>60){
+    if(outminute>=60){
         outhour++;
         outminute -=60;
     }
@@ -59,7 +67,7 @@ function cacl(){
         }
 
         Swal.fire({
-            title: "Please  Wait Untill  \n"+ outhour+':'+outminute,
+            title: "Please  Wait Untill  \n"+ (outhour < 10 ? ("0" + outhour) : outhour) +':'+ (outminute < 10 ? ("0" + outminute) : outminute),
             // text: "Ubho ree \n"+ outhour+':'+outminute,
             imageUrl: 'https://www.indianfilmhistory.com:3002/media/files_i/1605699272863ddhfi8tcwg.jpg',
             imageWidth: 400,
