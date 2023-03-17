@@ -72,7 +72,7 @@ function cacl() {
         Swal.fire({
             title: "Please  Wait Untill  \n" + (outhour < 10 ? ("0" + outhour) : outhour) + ':' + (outminute < 10 ? ("0" + outminute) : outminute),
             // text: "Ubho ree \n"+ outhour+':'+outminute,
-            imageUrl: URL('./gallery/itni bhi kya jaldi hai.jpg'),
+            imageUrl: './gallery/jaldi.jpg',
             imageWidth: 400,
             imageHeight: 200,
             imageAlt: 'Custom image',
