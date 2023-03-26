@@ -200,3 +200,8 @@ h1{
     color: #4e54c8;
     background-color: white;
 }
+@media screen and (max-width: 786px) {
+    .bodysss{
+        padding: 30px 15px;
+    }
+}
