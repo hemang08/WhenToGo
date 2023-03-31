@@ -203,5 +203,6 @@ h1{
 @media screen and (max-width: 786px) {
     .bodysss{
         padding: 30px 15px;
+        max-width: 80%;
     }
 }
