@@ -2,49 +2,116 @@
 <html lang="en">
 
 <head>
+
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="main.js"></script>
-    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="./style.css">
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <title>WhenToGo</title>
-</head>
+    <link rel="stylesheet" href="./style.css">
+  </head>
 
 <body>
-    <div class="area">
-        <ul class="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-5" href="javascript:void(0)"><img src="./gallery/final.png" alt="logo" srcset="" width="150px" height="50px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse  me-auto" id="mynavbar">
+        <ul class="navbar-nav me-auto">
         </ul>
-        <div class="bodysss d-flex flex-column">
-            <h1>When To Go</h1>
-            <input type="text" placeholder="OUT TIME" id="out" class=" text-center mt-2 p-2">
-            <input type="text" placeholder="Total Present Hours" class="text-center mt-2 p-2" id="totalh">
-            <button onclick="cacl()" id="btn" class="btn  mt-2">Calculate</button>
-            <h1 class="" id="output"></h1>
+        <div class="d-flex text-center">
+          <a class="custom-btn btn-6" href="./howtouse.html"><span>How to use!</span></a>
+          <a class="custom-btn btn-6" href='https://forms.gle/FhpfLnGWUA8meWTN6'><span>Inquiry</span></a>
         </div>
-        
-        <footer class="footer">
-            <button onclick= 'window.location.href = "./howtouse.html"'>
-                <h2>How to use!</h2>
-            </button>
-            <button onclick= 'window.location.href = "./Inquiry.html"'>
-                <h2>Inquiry</h2>
-            </button>
-        </footer>
+      </div>
     </div>
-        
+  </nav>
+  <div class="area">
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div class="form">
+      <div class="title text-center">When To Go</div>
+      <div class="input-container ic1">
+        <input id="out" class="input" type="text" placeholder=" " />
+        <div class="cut"></div>
+        <label for="firstname" class="placeholder">OUT TIME</label>
+      </div>
+      <div class="input-container ic2">
+        <input id="totalh" class="input" type="text" placeholder=" " />
+        <div class="cut"></div>
+        <label for="lastname" class="placeholder">TOTAL PRESENT HOURS</label>
+      </div>
+      <button type="text" onclick="cacl()" id="btn" class="submit mt-5">Calculate</button>
+    </div>
+   
+
+<footer class="new_footer_area bg_color">
+            <div class="new_footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                               
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                               
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                              
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bg">
+                    <div class="footer_bg_one"></div>
+                    <div class="footer_bg_two"></div>
+                </div>
+            </div>
+            
+        </footer>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-7">
+                        <p class="mb-0 f_400">© When To Go Inc.. 2023 All rights reserved.</p>
+                    </div>
+                    <div class="col-lg-6 col-sm-5 float-end text-end">
+                        <p>Version 2.0.0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- <footer class="footer">
+      <a class="custom-btn btn-6" href="./howtouse.html"><span>How to use!</span></a>
+      <a class="custom-btn btn-6" href='https://forms.gle/FhpfLnGWUA8meWTN6'><span>Inquiry</span></a>
+    </footer> -->
+  </div>
 </body>
 
 </html>
