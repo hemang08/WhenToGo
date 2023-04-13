@@ -1,7 +1,9 @@
 var requiredTime;
 function cacl() {
-    var out = document.getElementById("out").value.trim();
-    var totalh = document.getElementById("totalh").value.trim();
+
+    var out = document.getElementById("out").value.trim().toUpperCase();
+    var totalh = document.getElementById("totalh").value.trim().toUpperCase();
+
     var timeType = document.getElementById("TimeType").value;
 
     if(timeType == "1"){
@@ -15,9 +17,11 @@ function cacl() {
     }
 
 
+
     try {
         var HourStringFromTotalHour = totalh.split('H');
         var totalhour = HourStringFromTotalHour[0].includes('M') ? 0 : parseInt(HourStringFromTotalHour[0]);
+        totalhour = parseInt(totalhour) > 12 ? parseInt(totalhour) - 12 : totalhour; 
         var miniuteStringFromTotalHour = HourStringFromTotalHour[0].includes('M') ? HourStringFromTotalHour[0] : HourStringFromTotalHour[1];
         var miniute = miniuteStringFromTotalHour.includes('M') ? parseInt(miniuteStringFromTotalHour.split('M')[0]) : 0;
 
@@ -34,8 +38,9 @@ function cacl() {
 
 
     var outhour = parseInt(out.split(':')[0]);
+    outhour = outhour > 12 ? outhour - 12 : outhour;
     var outminute = parseInt(out.split(':')[1]);
-    var abc = (outhour * 60) + outminute;
+    // var abc = (outhour * 60) + outminute;
 
     var remaining = requiredTime - totalminute + 1;
     if (remaining <= 0) {
