@@ -1,7 +1,22 @@
-
+var requiredTime;
 function cacl() {
+
     var out = document.getElementById("out").value.trim().toUpperCase();
     var totalh = document.getElementById("totalh").value.trim().toUpperCase();
+
+    var timeType = document.getElementById("TimeType").value;
+
+    if(timeType == "1"){
+        requiredTime = 270;
+    }
+    else if(timeType == "2"){
+        requiredTime = 420;
+    }
+    else{
+        requiredTime = 510;
+    }
+
+
 
     try {
         var HourStringFromTotalHour = totalh.split('H');
@@ -27,7 +42,7 @@ function cacl() {
     var outminute = parseInt(out.split(':')[1]);
     // var abc = (outhour * 60) + outminute;
 
-    var remaining = 510 - totalminute + 1;
+    var remaining = requiredTime - totalminute + 1;
     if (remaining <= 0) {
         Goout();
         return;

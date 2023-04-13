@@ -12,6 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <title>WhenToGo</title>
+    <link rel="icon" type="image/x-icon" href="./gallery/w.png">
     <link rel="stylesheet" href="./style.css">
   </head>
 
@@ -56,6 +57,16 @@
         <input id="totalh" class="input" type="text" placeholder=" " />
         <div class="cut"></div>
         <label for="lastname" class="placeholder">TOTAL PRESENT HOURS</label>
+      </div>
+      <div class="input-container ic2">
+        <!-- <input id="Timetype" class="input" type="text" placeholder=" " /> -->
+        <select class="input" id="TimeType">
+            <option selected value="0">Full Day</option>
+            <option value="1">Half Day</option>
+            <option value="2">Early Leave</option>
+        </select>
+        <div class="cut"></div>
+        <label for="lastname" class="placeholder">Office Hour</label>
       </div>
       <button type="text" onclick="cacl()" id="btn" class="submit mt-5">Calculate</button>
     </div>
@@ -102,7 +113,7 @@
                         <p class="mb-0 f_400">© When To Go Inc.. 2023 All rights reserved.</p>
                     </div>
                     <div class="col-lg-6 col-sm-5 float-end text-end">
-                        <p>Version 2.0.0</p>
+                        <p>Version 2.1.0</p>
                     </div>
                 </div>
             </div>
