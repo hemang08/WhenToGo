@@ -6,7 +6,7 @@ body {
   overflow: hidden;
 }
 .navbar{
-  z-index: 100;
+  z-index: 101;
 }
 
 .form {
@@ -14,12 +14,12 @@ body {
   position: absolute;
   max-width: 50%;
   width: 100%;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   padding: 50px 100px;
-  z-index: 999;
+  z-index: 100;
 }
 
 .title {
@@ -79,6 +79,7 @@ body {
 }
 
 .placeholder {
+  
   color: #65657b;
   font-family: sans-serif;
   left: 20px;
@@ -435,5 +436,11 @@ background-size:100%;
   .form{
       padding: 30px 15px;
       max-width: 80%;
+  }
+  .placeholder{
+    font-size: 13px;
+  }
+  .new_footer_area{
+    display: none;
   }
 }
