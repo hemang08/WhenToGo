@@ -96,9 +96,9 @@ function cacl() {
             width: 600,
             padding: '3em',
             color: '#716add',
-            background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
+            background: '#fff url(./gallery/O9FG4W0.jpg)',
             backdrop: `
-            rgba(0,0,123,0.4)`,
+            rgba(218, 218, 233, 0.72)`,
             allowOutsideClick: false
         })
     }
@@ -116,9 +116,9 @@ function Goout() {
         width: 600,
         padding: '3em',
         color: '#716add',
-        background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
+        background: '#fff url(./gallery/O9FG4W0.jpg)',
         backdrop: `
-rgba(0,0,123,0.4)`,
+        rgba(218, 218, 233, 0.72)`,
         allowOutsideClick: false
     })
 }

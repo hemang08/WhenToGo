@@ -12,23 +12,57 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <title>WhenToGo</title>
-    <link rel="icon" type="image/x-icon" href="./gallery/w.png">
+    <link rel="icon" type="image/x-icon" href="./gallery/logo.jpg">
     <link rel="stylesheet" href="./style.css">
   </head>
 
 <body>
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand ms-5" href="javascript:void(0)"><img src="./gallery/final.png" alt="logo" srcset="" width="150px" height="50px"></a>
+      <a class="navbar-brand ms-5" href="javascript:void(0)"><img src="./gallery/logo.jpg" alt="logo" srcset=""
+          width="150px" height="80px"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse  me-auto" id="mynavbar">
+      <div class="collapse navbar-collapse me-auto" id="mynavbar">
         <ul class="navbar-nav me-auto">
         </ul>
-        <div class="d-flex text-center">
-          <a class="custom-btn btn-6" href="./howtouse.html"><span>How to use!</span></a>
-          <a class="custom-btn btn-6" href='https://forms.gle/FhpfLnGWUA8meWTN6'><span>Inquiry</span></a>
+        <div class="d-flex text-center btn_group">
+          <button class="button_nav">
+            <div class="svg-wrapper-1">
+              <div class="svg-wrapper">
+                 <svg class="svg1" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.5 47.5"
+                  id="mark">
+                  <defs>
+                    <clipPath id="a">
+                      <path d="M0 38h38V0H0v38Z" fill="#ffffff" class="color000 svgShape"></path>
+                    </clipPath>
+                  </defs>
+                  <g fill="#939598" clip-path="url(#a)" transform="matrix(1.25 0 0 -1.25 0 47.5)" class="color939598 svgShape">
+                    <path
+                      d="M18 10a3 3 0 0 0-3 3v4a3 3 0 0 0 3 3c.603.006 6 1 6 5 0 2-2 4-5 4-2.441 0-4-2-4-3a3 3 0 1 0-6 0c0 4.878 4.58 9 10 9 8 0 11-5.982 11-11 0-4.145-2.277-7.313-6.413-8.921-.9-.35-1.79-.587-2.587-.747V13a3 3 0 0 0-3-3M21 5a3 3 0 1 0-6 0 3 3 0 0 0 6 0" fill="#ffffff" class="color000 svgShape">
+                    </path>
+                  </g>
+                </svg> 
+              </div>
+            </div>
+            <a class="btn" href="./howtouse.html"><span class="span">How to use!</span></a>
+            <!-- <span>How To Use</span> -->
+          </button>
+          <button class="button_nav mx-2">
+            <div class="svg-wrapper-1">
+              <div class="svg-wrapper">
+                <svg class="svg2" height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                    fill="currentColor"></path>
+                </svg>
+              </div>
+            </div>
+            <a class="btn" href='https://forms.gle/FhpfLnGWUA8meWTN6'><span>Inquiry</span></a>
+            <!-- <span>Inquiry</span> -->
+          </button>
         </div>
       </div>
     </div>
@@ -61,67 +95,67 @@
       <div class="input-container ic2">
         <!-- <input id="Timetype" class="input" type="text" placeholder=" " /> -->
         <select class="input" id="TimeType">
-            <option selected value="0">Full Day</option>
-            <option value="1">Half Day</option>
-            <option value="2">Early Leave</option>
+          <option selected value="0">Full Day</option>
+          <option value="1">Half Day</option>
+          <option value="2">Early Leave</option>
         </select>
         <div class="cut"></div>
         <label for="lastname" class="placeholder ">Office Hour</label>
       </div>
       <button type="text" onclick="cacl()" id="btn" class="submit mt-5">Calculate</button>
     </div>
-   
 
-<footer class="new_footer_area bg_color">
-            <div class="new_footer_top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6">
-                            <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
-                                
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
-                               
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
-                               
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
-                              
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer_bg">
-                    <div class="footer_bg_one"></div>
-                    <div class="footer_bg_two"></div>
-                </div>
+
+    <footer class="new_footer_area bg_color">
+      <div class="new_footer_top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s"
+                style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+
+              </div>
             </div>
-            
-        </footer>
-        <div class="footer_bottom">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-sm-7">
-                        <p class="mb-0 f_400">© When To Go Inc.. 2023 All rights reserved.</p>
-                    </div>
-                    <div class="col-lg-6 col-sm-5 float-end text-end">
-                        <p>Version 2.1.0</p>
-                    </div>
-                </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s"
+                style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+
+              </div>
             </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s"
+                style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s"
+                style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+
+
+              </div>
+            </div>
+          </div>
         </div>
-    <!-- <footer class="footer">
-      <a class="custom-btn btn-6" href="./howtouse.html"><span>How to use!</span></a>
-      <a class="custom-btn btn-6" href='https://forms.gle/FhpfLnGWUA8meWTN6'><span>Inquiry</span></a>
-    </footer> -->
+        <div class="footer_bg">
+          <div class="footer_bg_one"></div>
+          <div class="footer_bg_two"></div>
+        </div>
+      </div>
+
+    </footer>
+    <div class="footer_bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-sm-7">
+            <p class="mb-0 f_400">© When To Go Inc.. 2023 All rights reserved.</p>
+          </div>
+          <div class="col-lg-6 col-sm-5 float-end text-end">
+            <p>Version 2.1.1</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 
