@@ -1,7 +1,7 @@
 
 function cacl() {
-    var out = document.getElementById("out").value.trim();
-    var totalh = document.getElementById("totalh").value.trim();
+    var out = document.getElementById("out").value.trim().toUpperCase();
+    var totalh = document.getElementById("totalh").value.trim().toUpperCase();
 
     try {
         var HourStringFromTotalHour = totalh.split('H');
