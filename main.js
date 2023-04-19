@@ -1,6 +1,10 @@
 var requiredTime;
-function cacl() {
 
+// function fetchGIF(type){
+   
+// }
+
+function cacl() {
     var out = document.getElementById("out").value.trim().toUpperCase();
     var totalh = document.getElementById("totalh").value.trim().toUpperCase();
 
@@ -67,40 +71,54 @@ function cacl() {
 
     let totalminute1 = d.getMinutes();
     if (hour > outhour || (hour == outhour && totalminute1 > outminute)) {
-        Swal.fire({
-            text: "You can leave, You already done with hours",
-            imageUrl: 'https://i.redd.it/d4bezp9infx41.png',
-            imageWidth: 400,
-            imageHeight: 200,
-            imageAlt: 'Custom image',
-            width: 600,
-            padding: '3em',
-            color: '#716add',
-            background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
-            backdrop: `
-    rgba(0,0,123,0.4)`,
-            allowOutsideClick: false
+        fetch(`https://g.tenor.com/v1/search?q=gohome&key=LIVDSRZULELA&limit=50`).then((res)=>{
+            return res.json()
+        }).then((data)=>{
+            var obj = data.results[Math.ceil(Math.random()*49)];
+            var str = obj.media[0].gif.url;
+            Swal.fire({
+                text: "You can leave, You already done with hours",
+                imageUrl: str || 'https://i.redd.it/d4bezp9infx41.png',
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: 'Custom image',
+                width: 600,
+                padding: '3em',
+                color: '#716add',
+                background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
+                backdrop: `
+        rgba(0,0,123,0.4)`,
+                allowOutsideClick: false
+            })
         })
+      
     }
     else {
         if (outhour > 12) {
             outhour -= 12;
         }
-        Swal.fire({
-            title: "Please  Wait Untill  \n" + (outhour < 10 ? ("0" + outhour) : outhour) + ':' + (outminute < 10 ? ("0" + outminute) : outminute),
-            // text: "Ubho ree \n"+ outhour+':'+outminute,
-            imageUrl: './gallery/jaldi.jpg',
-            imageWidth: 400,
-            imageHeight: 200,
-            imageAlt: 'Custom image',
-            width: 600,
-            padding: '3em',
-            color: '#716add',
-            background: '#fff url(./gallery/O9FG4W0.jpg)',
-            backdrop: `
-            rgba(218, 218, 233, 0.72)`,
-            allowOutsideClick: false
-        })
+        fetch(`https://g.tenor.com/v1/search?q=dontgo&key=LIVDSRZULELA&limit=50`).then((res)=>{
+            return res.json()
+        }).then((data)=>{
+            var obj = data.results[Math.ceil(Math.random()*49)];
+            var str = obj.media[0].gif.url;
+            Swal.fire({
+                title: "Please  Wait Untill  \n" + (outhour < 10 ? ("0" + outhour) : outhour) + ':' + (outminute < 10 ? ("0" + outminute) : outminute),
+                // text: "Ubho ree \n"+ outhour+':'+outminute,
+                imageUrl: str || './gallery/jaldi.jpg',
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: 'Custom image',
+                width: 600,
+                padding: '3em',
+                color: '#716add',
+                background: '#fff url(./gallery/O9FG4W0.jpg)',
+                backdrop: `
+                rgba(218, 218, 233, 0.72)`,
+                allowOutsideClick: false
+            })
+        });
+        
     }
 
 }
