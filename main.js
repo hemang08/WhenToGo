@@ -62,7 +62,7 @@ function cacl() {
             var str = obj.media[0].gif.url;
             Swal.fire({
                 text: "You can leave, You already done with hours",
-                imageUrl: str || 'https://i.redd.it/d4bezp9infx41.png',
+                imageUrl: 'https://i.redd.it/d4bezp9infx41.png',
                 imageWidth: 400,
                 imageHeight: 200,
                 imageAlt: 'Custom image',
@@ -88,7 +88,7 @@ function cacl() {
             var str = obj.media[0].gif.url;
             Swal.fire({
                 title: "Please  Wait Untill  \n" + (outhour < 10 ? ("0" + outhour) : outhour) + ':' + (outminute < 10 ? ("0" + outminute) : outminute),
-                imageUrl: str || './gallery/jaldi.jpg',
+                imageUrl:'./gallery/jaldi.jpg',
                 imageWidth: 400,
                 imageHeight: 200,
                 imageAlt: 'Custom image',
