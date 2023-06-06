@@ -55,11 +55,11 @@ function cacl() {
     let totalminute1 = d.getMinutes();
 
     if (hour > outhour || (hour == outhour && totalminute1 >= outminute)) {
-        fetch(`https://g.tenor.com/v1/search?q=gohome&key=LIVDSRZULELA&limit=50`).then((res) => {
-            return res.json()
-        }).then((data) => {
-            var obj = data.results[Math.ceil(Math.random() * 49)];
-            var str = obj.media[0].gif.url;
+        // fetch(`https://g.tenor.com/v1/search?q=gohome&key=LIVDSRZULELA&limit=50`).then((res) => {
+        //     return res.json()
+        // }).then((data) => {
+        //     var obj = data.results[Math.ceil(Math.random() * 49)];
+        //     var str = obj.media[0].gif.url;
             Swal.fire({
                 text: "You can leave, You already done with hours",
                 imageUrl: 'https://i.redd.it/d4bezp9infx41.png',
@@ -74,18 +74,18 @@ function cacl() {
         rgba(0,0,123,0.4)`,
                 allowOutsideClick: false
             })
-        })
+        // })
 
     }
     else {
         if (outhour > 12) {
             outhour -= 12;
         }
-        fetch(`https://g.tenor.com/v1/search?q=dontgo&key=LIVDSRZULELA&limit=50`).then((res) => {
-            return res.json()
-        }).then((data) => {
-            var obj = data.results[Math.ceil(Math.random() * 49)];
-            var str = obj.media[0].gif.url;
+        // fetch(`https://g.tenor.com/v1/search?q=dontgo&key=LIVDSRZULELA&limit=50`).then((res) => {
+        //     return res.json()
+        // }).then((data) => {
+        //     var obj = data.results[Math.ceil(Math.random() * 49)];
+        //     var str = obj.media[0].gif.url;
             Swal.fire({
                 title: "Please  Wait Untill  \n" + (outhour < 10 ? ("0" + outhour) : outhour) + ':' + (outminute < 10 ? ("0" + outminute) : outminute),
                 imageUrl:'./gallery/jaldi.jpg',
@@ -100,6 +100,6 @@ function cacl() {
                 rgba(218, 218, 233, 0.72)`,
                 allowOutsideClick: false
             })
-        });
+        // });
     }
 }
