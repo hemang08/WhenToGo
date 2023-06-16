@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script src="./main.js"></script>
     <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -31,19 +32,21 @@
           <button class="button_nav">
             <div class="svg-wrapper-1">
               <div class="svg-wrapper">
-                 <svg class="svg1" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.5 47.5"
+                <svg class="svg1" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.5 47.5"
                   id="mark">
                   <defs>
                     <clipPath id="a">
                       <path d="M0 38h38V0H0v38Z" fill="#ffffff" class="color000 svgShape"></path>
                     </clipPath>
                   </defs>
-                  <g fill="#939598" clip-path="url(#a)" transform="matrix(1.25 0 0 -1.25 0 47.5)" class="color939598 svgShape">
+                  <g fill="#939598" clip-path="url(#a)" transform="matrix(1.25 0 0 -1.25 0 47.5)"
+                    class="color939598 svgShape">
                     <path
-                      d="M18 10a3 3 0 0 0-3 3v4a3 3 0 0 0 3 3c.603.006 6 1 6 5 0 2-2 4-5 4-2.441 0-4-2-4-3a3 3 0 1 0-6 0c0 4.878 4.58 9 10 9 8 0 11-5.982 11-11 0-4.145-2.277-7.313-6.413-8.921-.9-.35-1.79-.587-2.587-.747V13a3 3 0 0 0-3-3M21 5a3 3 0 1 0-6 0 3 3 0 0 0 6 0" fill="#ffffff" class="color000 svgShape">
+                      d="M18 10a3 3 0 0 0-3 3v4a3 3 0 0 0 3 3c.603.006 6 1 6 5 0 2-2 4-5 4-2.441 0-4-2-4-3a3 3 0 1 0-6 0c0 4.878 4.58 9 10 9 8 0 11-5.982 11-11 0-4.145-2.277-7.313-6.413-8.921-.9-.35-1.79-.587-2.587-.747V13a3 3 0 0 0-3-3M21 5a3 3 0 1 0-6 0 3 3 0 0 0 6 0"
+                      fill="#ffffff" class="color000 svgShape">
                     </path>
                   </g>
-                </svg> 
+                </svg>
               </div>
             </div>
             <a class="btn" href="./howtouse.html"><span class="span">How to use!</span></a>
@@ -102,7 +105,8 @@
         <div class="cut"></div>
         <label for="lastname" class="placeholder ">Office Hour</label>
       </div>
-      <button type="text" onclick="cacl()" id="btn" class="submit mt-5">Calculate</button>
+      <button type="text" id="btncalc" class="submit mt-5">Calculate</button>
+      <!-- <button type="text" onclick="cacl()" id="btn " class="submit mt-5">Calculate</button> -->
     </div>
 
 
