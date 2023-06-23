@@ -13,15 +13,15 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <title>WhenToGo</title>
-    <link rel="icon" type="image/x-icon" href="./gallery/logo.jpg">
+    <link rel="icon" type="image/x-icon" href="./gallery/home-button-icon-png-20.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
   </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-sm">
     <div class="container-fluid">
-      <a class="navbar-brand ms-5" href="javascript:void(0)"><img src="./gallery/logo.jpg" alt="logo" srcset=""
-          width="150px" height="80px"></a>
+      <a class="navbar-brand ms-5" href="javascript:void(0)" style="color: white;"><i class="fa fa-home me-3" aria-hidden="true"></i>When To Go</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -32,24 +32,23 @@
           <button class="button_nav">
             <div class="svg-wrapper-1">
               <div class="svg-wrapper">
-                <svg class="svg1" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.5 47.5"
+                 <svg class="svg1" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.5 47.5"
                   id="mark">
                   <defs>
                     <clipPath id="a">
                       <path d="M0 38h38V0H0v38Z" fill="#ffffff" class="color000 svgShape"></path>
                     </clipPath>
                   </defs>
-                  <g fill="#939598" clip-path="url(#a)" transform="matrix(1.25 0 0 -1.25 0 47.5)"
-                    class="color939598 svgShape">
+                  <g fill="#939598" clip-path="url(#a)" transform="matrix(1.25 0 0 -1.25 0 47.5)" class="color939598 svgShape">
                     <path
-                      d="M18 10a3 3 0 0 0-3 3v4a3 3 0 0 0 3 3c.603.006 6 1 6 5 0 2-2 4-5 4-2.441 0-4-2-4-3a3 3 0 1 0-6 0c0 4.878 4.58 9 10 9 8 0 11-5.982 11-11 0-4.145-2.277-7.313-6.413-8.921-.9-.35-1.79-.587-2.587-.747V13a3 3 0 0 0-3-3M21 5a3 3 0 1 0-6 0 3 3 0 0 0 6 0"
-                      fill="#ffffff" class="color000 svgShape">
+                      d="M18 10a3 3 0 0 0-3 3v4a3 3 0 0 0 3 3c.603.006 6 1 6 5 0 2-2 4-5 4-2.441 0-4-2-4-3a3 3 0 1 0-6 0c0 4.878 4.58 9 10 9 8 0 11-5.982 11-11 0-4.145-2.277-7.313-6.413-8.921-.9-.35-1.79-.587-2.587-.747V13a3 3 0 0 0-3-3M21 5a3 3 0 1 0-6 0 3 3 0 0 0 6 0" fill="#ffffff" class="color000 svgShape">
                     </path>
                   </g>
-                </svg>
+                </svg> 
               </div>
             </div>
-            <a class="btn" href="./howtouse.html"><span class="span">How to use!</span></a>
+             <a class="btn" href="./howtouse.html"><span class="span">How to use!</span></a>
+
             <!-- <span>How To Use</span> -->
           </button>
           <button class="button_nav mx-2">
@@ -64,6 +63,19 @@
               </div>
             </div>
             <a class="btn" href='https://forms.gle/FhpfLnGWUA8meWTN6'><span>Inquiry</span></a>
+            <!-- <span>Inquiry</span> -->
+          </button>
+          <button class="button_nav mx-2">
+            <div class="svg-wrapper-1">
+              <div class="svg-wrapper">
+                <svg class="svg3" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
+                  <path 
+                  d="M32 32C32 14.3 46.3 0 64 0H320c17.7 0 32 14.3 32 32s-14.3 32-32 32H290.5l11.4 148.2c36.7 19.9 65.7 53.2 79.5 94.7l1 3c3.3 9.8 1.6 20.5-4.4 28.8s-15.7 13.3-26 13.3H32c-10.3 0-19.9-4.9-26-13.3s-7.7-19.1-4.4-28.8l1-3c13.8-41.5 42.8-74.8 79.5-94.7L93.5 64H64C46.3 64 32 49.7 32 32zM160 384h64v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V384z"
+                  fill="currentColor"></path>
+                </svg>
+              </div>
+            </div>
+            <a class="btn" href='./feedback.html'><span>Feedback</span></a>
             <!-- <span>Inquiry</span> -->
           </button>
         </div>
@@ -102,10 +114,10 @@
           <option value="1">Half Day</option>
           <option value="2">Early Leave</option>
         </select>
-        <div class="cut"></div>
-        <label for="lastname" class="placeholder ">Office Hour</label>
+        <!-- <div class="cut"></div>
+        <label for="lastname" class="placeholder ">Office Hour</label> -->
       </div>
-      <button type="text" id="btncalc" class="submit mt-5">Calculate</button>
+      <button type="text" id="btncalc" onclick="cacl()" id="btn" class="submit mt-5">Calculate</button>
       <!-- <button type="text" onclick="cacl()" id="btn " class="submit mt-5">Calculate</button> -->
     </div>
 
@@ -155,7 +167,7 @@
             <p class="mb-0 f_400">© When To Go Inc.. 2023 All rights reserved.</p>
           </div>
           <div class="col-lg-6 col-sm-5 float-end text-end">
-            <p>Version 2.1.2</p>
+            <p>Version 2.3.4</p>
           </div>
         </div>
       </div>
