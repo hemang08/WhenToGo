@@ -43,6 +43,7 @@ function cacl() {
     }
 
     var outhour = parseInt(out.split(':')[0]);
+    outhour = outhour > 12 ? outhour - 12 : outhour;
     var outminute = parseInt(out.split(':')[1]);
     var remaining = requiredTime - totalminute + 1;
     var lastHour = Math.floor(remaining / 60);
@@ -59,7 +60,6 @@ function cacl() {
     var d = new Date();
     let hour = d.getHours() < 12 ? d.getHours() : d.getHours() - 12;
     let totalminute1 = d.getMinutes();
-    outhour = outhour > 12 ? outhour - 12 : outhour;
 
     if (hour > outhour || (hour == outhour && totalminute1 >= outminute)) {
         $.ajax({
@@ -116,7 +116,7 @@ function cacl() {
         
         $.ajax({
             type: "GET",
-            url: "https://g.tenor.com/v1/search?q=dontgo&key=LIVDSRZULELA&limit=50",
+            url: "https://g.tenor.com/v1/search?q=gohome&key=LIVDSRZULELA&limit=50",
             success: function (response) {
                 
                 let StayGifUrl = response.results[rendomNum].media[0].gif.url;
