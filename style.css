@@ -5,12 +5,23 @@ body {
   height: 100vh;
   overflow: hidden;
 }
-
+/* nav{
+  background-color: #000;
+} */
+.navbar-toggler-icon{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
 .navbar {
   z-index: 101;
 }
 
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+     box-shadow: none !important;
+}
 .form {
+ 
   background-color: #15172b;
   position: absolute;
   max-width: 50%;
@@ -18,7 +29,7 @@ body {
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow:rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   padding: 50px 100px;
   z-index: 100;
 }
@@ -106,7 +117,7 @@ body {
 }
 
 .submit {
-  background-color: #08d;
+  background-color: #565678;
   border-radius: 12px;
   border: 0;
   box-sizing: border-box;
@@ -119,9 +130,11 @@ body {
   text-align: center;
   width: 100%;
 }
-
+.submit:hover{
+  background-color: #3b3b60;
+}
 .submit:active {
-  background-color: #06b;
+  background-color: #414187;
 }
 
 .btn {
@@ -137,19 +150,17 @@ body {
 .button_nav {
   font-family: inherit;
   font-size: 17px;
-  background: royalblue;
+  background: none;
+  border: none; 
   color: white;
   padding: 0.3em 1em;
   padding-left: 0.5em;
   display: flex;
   align-items: center;
-  border: none;
-  border-radius: 16px;
   overflow: hidden;
   transition: all 0.2s;
   letter-spacing: 2px;
 }
-
 .button_nav a span {
   display: block;
   margin-left: 0.5em;
@@ -164,6 +175,7 @@ body {
 
 .button_nav:hover .svg-wrapper {
   animation: fly-1 0.6s ease-in-out infinite alternate;
+
 }
 
 .button_nav:hover .svg1 {
@@ -171,6 +183,9 @@ body {
 }
 
 .button_nav:hover .svg2 {
+  transform: translateX(3em) rotate(45deg) scale(1.1);
+}
+.button_nav:hover .svg3 {
   transform: translateX(3em) rotate(45deg) scale(1.1);
 }
 
@@ -408,7 +423,7 @@ p {
   }
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 714px) {
   .form {
     padding: 30px 15px;
     max-width: 80%;
@@ -432,7 +447,7 @@ img{
 .button_nav{
   padding: 0px 0px;
 }
-.svg1,.svg2{
+.svg3,.svg1,.svg2{
   padding-left: 0px;
 }
 .button_nav a span{
@@ -445,11 +460,11 @@ img{
 }
 
 }
-@media screen and (max-width: 578px){
+@media screen and (max-width: 712px){
   .button_nav{
     padding: 0px 0px;
   }
-  .svg1,.svg2{
+  .svg3,.svg1,.svg2{
     padding-left: 7px;
   }
   .button_nav a span{
@@ -466,7 +481,7 @@ img{
 .button_nav{
   padding: 0px 0px;
 }
-.svg1,.svg2{
+.svg3,.svg1,.svg2{
   padding-left: 7px;
 }
 .button_nav a span{
