@@ -60,7 +60,7 @@ function cacl() {
     var d = new Date();
     let hour = d.getHours() < 12 ? d.getHours() : d.getHours() - 12;
     let totalminute1 = d.getMinutes();
-
+        
     if (hour > outhour || (hour == outhour && totalminute1 >= outminute)) {
         $.ajax({
             type: "Get",
@@ -116,7 +116,7 @@ function cacl() {
         
         $.ajax({
             type: "GET",
-            url: "https://g.tenor.com/v1/search?q=gohome&key=LIVDSRZULELA&limit=50",
+            url: "https://g.tenor.com/v1/search?q=dontgo&key=LIVDSRZULELA&limit=50",
             success: function (response) {
                 
                 let StayGifUrl = response.results[rendomNum].media[0].gif.url;

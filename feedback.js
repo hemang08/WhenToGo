@@ -149,10 +149,10 @@ function update_answers() {
   for (i = 0; i < questions.length; i++) {
     $(".summary").append(
       "<p>" +
-        questions[i] +
-        '</p><p class="answer_p">' +
-        answers[animals[i]][0] +
-        "</p>"
+      questions[i] +
+      '</p><p class="answer_p">' +
+      answers[animals[i]][0] +
+      "</p>"
     );
   }
 }
@@ -271,3 +271,8 @@ $("input").mouseup(function () {
 // Things appear on the board, banans etc
 // summary page?
 // Eyes follow you?
+$("#feedbackbtnsubmit").click(function(){
+    var userfeedback = $("#userfeedbackinput").text();
+  $("#feedbackoutput").val(userfeedback)
+    $('#feedbackformbody').submit();
+});

@@ -7,6 +7,32 @@
   z-index: 3;
   display: none;
 }
+.inputbox{
+  
+  margin-top: 8px;
+  text-align: center;
+      padding: 10px;
+      width: 50%;
+      border-radius: 8px;
+      background: white;
+      color: black !important;    
+      border-style: solid;      
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    
+}
+.Feedbackbutton {
+  margin-top: 8px;  
+  text-align: center;
+      padding: 10px;
+      width: 30%;
+      border-radius: 8px;
+      background:  white;
+       color: black !important;     
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    
+}
+.Feedbackbutton:hover,.inputbox:hover{
+  background: none;
+  text-transform: capitalize;
+}
 .question p {
   font-size: 40px;
   color: white;
@@ -189,36 +215,7 @@ body .feedbackform_slide .grad.monkey {
   transition: all 0.3s;
   top: 0;
 }
-body .feedbackform_slide .grad.rabbit {
-  background: -moz-radial-gradient(center, ellipse cover, rgba(125, 185, 232, 0) 0%, #991E64 100%);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  opacity: 0.25;
-  transition: all 0.3s;
-  top: 0;
-}
-body .feedbackform_slide .grad.panda {
-  background: -moz-radial-gradient(center, ellipse cover, rgba(125, 185, 232, 0) 0%, #7414E3 100%);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  opacity: 0.25;
-  transition: all 0.3s;
-  top: 0;
-}
-body .feedbackform_slide .grad.lion {
-  background: -moz-radial-gradient(center, ellipse cover, rgba(125, 185, 232, 0) 0%, #E41C3B 100%);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  opacity: 0.25;
-  transition: all 0.3s;
-  top: 0;
-}
+
 body .feedbackform_slide__inner {
   position: absolute;
   top: 50%;
@@ -245,12 +242,12 @@ body .feedbackform_slide__inner h2 {
 body .feedbackform_slide__inner .rating {
   transform: scale(0);
   font-family: "Crete Round", serif;
-  color: #745226;
+  color: white;
   position: relative;
   left: 0px;
   font-size: 26px;
   border-radius: 4px;
-  width: 260px;
+  width: 80%;
   padding: 30px;
   background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/board.png");
   background-size: cover;
@@ -277,9 +274,7 @@ body .feedbackform_slide__inner .rating .prev:hover {
 body .feedbackform_slide__inner .rating .prev, body .feedbackform_slide__inner .rating .next {
   transform: scale(0);
 }
-body .feedbackform_slide__inner .character.rabbit {
-  width: 156px;
-}
+
 body .feedbackform_slide__inner .character {
   width: 180px;
   transform: scale(0);
@@ -297,21 +292,7 @@ body .feedbackform_slide__inner .character_smile .smile.monkey {
   top: 119px;
   left: 61px;
 }
-body .feedbackform_slide__inner .character_smile .smile.panda {
-  position: absolute;
-  top: 129px;
-  left: 63px;
-}
-body .feedbackform_slide__inner .character_smile .smile.lion {
-  position: absolute;
-  top: 122px;
-  left: 60px;
-}
-body .feedbackform_slide__inner .character_smile .smile.rabbit {
-  position: absolute;
-  top: 164px;
-  left: 49px;
-}
+
 @-moz-document url-prefix() {
   body .feedbackform_slide__inner .character_smile input.monkey {
     transform: rotate(90deg) !important;
@@ -322,33 +303,6 @@ body .feedbackform_slide__inner .character_smile .smile.rabbit {
     z-index: 1 !important;
     opacity: 0 !important;
     left: 35px !important;
-  }
-  body .feedbackform_slide__inner .character_smile input.rabbit {
-    transform: rotate(90deg) !important;
-    width: 96px !important;
-    top: 165px !important;
-    position: relative !important;
-    z-index: 1 !important;
-    opacity: 0 !important;
-    left: 22px !important;
-  }
-  body .feedbackform_slide__inner .character_smile input.panda {
-    transform: rotate(90deg) !important;
-    width: 96px !important;
-    top: 131px !important;
-    position: relative !important;
-    z-index: 1 !important;
-    opacity: 0 !important;
-    left: 36px !important;
-  }
-  body .feedbackform_slide__inner .character_smile input.lion {
-    transform: rotate(90deg) !important;
-    width: 96px !important;
-    top: 124px !important;
-    position: relative !important;
-    z-index: 1 !important;
-    opacity: 0 !important;
-    left: 33px !important;
   }
 }
 body .feedbackform_slide__inner .character_smile input.monkey {
