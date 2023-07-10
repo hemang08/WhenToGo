@@ -1,1 +1,165 @@
-var _0xfab290=_0x52ff;function _0x52ff(_0x1de564,_0x423dd1){var _0x4960a2=_0x4960();return _0x52ff=function(_0x52ffac,_0x2aedd3){_0x52ffac=_0x52ffac-0x133;var _0x2be312=_0x4960a2[_0x52ffac];return _0x2be312;},_0x52ff(_0x1de564,_0x423dd1);}(function(_0x34cedf,_0x3531ee){var _0x588cda=_0x52ff,_0xbc01f6=_0x34cedf();while(!![]){try{var _0x1ef990=parseInt(_0x588cda(0x158))/0x1*(-parseInt(_0x588cda(0x13a))/0x2)+parseInt(_0x588cda(0x149))/0x3*(-parseInt(_0x588cda(0x13b))/0x4)+parseInt(_0x588cda(0x147))/0x5*(parseInt(_0x588cda(0x151))/0x6)+parseInt(_0x588cda(0x15c))/0x7*(-parseInt(_0x588cda(0x155))/0x8)+parseInt(_0x588cda(0x144))/0x9*(-parseInt(_0x588cda(0x145))/0xa)+-parseInt(_0x588cda(0x157))/0xb*(-parseInt(_0x588cda(0x154))/0xc)+parseInt(_0x588cda(0x13c))/0xd*(parseInt(_0x588cda(0x15f))/0xe);if(_0x1ef990===_0x3531ee)break;else _0xbc01f6['push'](_0xbc01f6['shift']());}catch(_0x4f2553){_0xbc01f6['push'](_0xbc01f6['shift']());}}}(_0x4960,0x55a10));var requiredTime;$(document)[_0xfab290(0x137)](function(){var _0x3eec1f=_0xfab290;$(_0x3eec1f(0x15a))[_0x3eec1f(0x140)]()['click'](function(){cacl();});});function _0x4960(){var _0x5c98d2=['#716add','#btncalc','floor','7ZqfiVt','media','results','1945958jPNhfU','split','toUpperCase','totalh','ajax','ready','getMinutes','value','1059838OhtfqB','248oBLoCy','39CTzFvF','https://g.tenor.com/v1/search?q=dontgo&key=LIVDSRZULELA&limit=50','getElementById','Please\x20Enter\x20Out\x20Hours\x20in\x2012\x20Hour\x20Format','off','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20rgba(0,0,123,0.4)','includes','./gallery/jaldi.jpg','14913LnicHt','730EZfCtQ','log','245HOyKzd','#fff\x20url(./gallery/O9FG4W0.jpg)','20601mXcjkN','#fff\x20url(https://sweetalert2.github.io/images/trees.png)','fire','url','ceil','gif','3em','Custom\x20image','72222VoxeIT','Please\x20enter\x20valid\x20format!\x20check\x20video\x20below!','getHours','912pZVnff','647664PZxSwB','trim','72589GcBmPt','1sRpKSY'];_0x4960=function(){return _0x5c98d2;};return _0x4960();}function cacl(){var _0x4fcb56=_0xfab290,_0x56457f=document[_0x4fcb56(0x13e)]('out')['value'][_0x4fcb56(0x156)]()[_0x4fcb56(0x134)](),_0x34c0f0=document[_0x4fcb56(0x13e)](_0x4fcb56(0x135))['value'][_0x4fcb56(0x156)]()[_0x4fcb56(0x134)]();if(!_0x56457f[_0x4fcb56(0x133)]('\x20')[0x1]){alert(_0x4fcb56(0x13f));return;}var _0x5639c2=document['getElementById']('TimeType')[_0x4fcb56(0x139)];if(_0x5639c2=='1')requiredTime=0x10e;else _0x5639c2=='2'?requiredTime=0x1a4:requiredTime=0x1fe;try{var _0x1fc7dc=_0x34c0f0[_0x4fcb56(0x133)]('H'),_0x24a0db=_0x1fc7dc[0x0][_0x4fcb56(0x142)]('M')?0x0:parseInt(_0x1fc7dc[0x0]);_0x24a0db=parseInt(_0x24a0db)>0xc?parseInt(_0x24a0db)-0xc:_0x24a0db;var _0x534a8f=_0x1fc7dc[0x0][_0x4fcb56(0x142)]('M')?_0x1fc7dc[0x0]:_0x1fc7dc[0x1],_0x1b698d=_0x534a8f[_0x4fcb56(0x142)]('M')?parseInt(_0x534a8f[_0x4fcb56(0x133)]('M')[0x0]):0x0,_0xa05772=_0x1b698d+parseInt(_0x24a0db)*0x3c;}catch{alert(_0x4fcb56(0x152));return;}if(isNaN(_0x24a0db)||isNaN(_0xa05772)){alert(_0x4fcb56(0x152));return;}var _0x193709=parseInt(_0x56457f[_0x4fcb56(0x133)](':')[0x0]);_0x193709=_0x193709>0xc?_0x193709-0xc:_0x193709;var _0x3ffc46=parseInt(_0x56457f[_0x4fcb56(0x133)](':')[0x1]),_0x1e98b3=requiredTime-_0xa05772+0x1,_0x56cd52=Math[_0x4fcb56(0x15b)](_0x1e98b3/0x3c),_0x260ea1=_0x1e98b3%0x3c;_0x193709+=_0x56cd52,_0x3ffc46+=_0x260ea1;_0x3ffc46>=0x3c&&(_0x193709++,_0x3ffc46-=0x3c);var _0x5ab0fc=Math[_0x4fcb56(0x14d)](Math['random']()*0x31),_0xb99342=new Date();let _0x52e45f=_0xb99342['getHours']()<0xc?_0xb99342['getHours']():_0xb99342[_0x4fcb56(0x153)]()-0xc,_0x48cef6=_0xb99342[_0x4fcb56(0x138)]();_0x52e45f>_0x193709||_0x52e45f==_0x193709&&_0x48cef6>=_0x3ffc46?$[_0x4fcb56(0x136)]({'type':'Get','url':'https://g.tenor.com/v1/search?q=gohome&key=LIVDSRZULELA&limit=50','success':function(_0x35f651){var _0x12fcc7=_0x4fcb56,_0x10c98f=_0x35f651[_0x12fcc7(0x15e)][_0x5ab0fc][_0x12fcc7(0x15d)][0x0][_0x12fcc7(0x14e)][_0x12fcc7(0x14c)];Swal['fire']({'text':'You\x20can\x20leave,\x20You\x20already\x20done\x20with\x20hours','imageUrl':_0x10c98f||'https://i.redd.it/d4bezp9infx41.png','imageWidth':0x190,'imageHeight':0xc8,'imageAlt':_0x12fcc7(0x150),'width':0x258,'padding':_0x12fcc7(0x14f),'color':'#716add','background':_0x12fcc7(0x14a),'backdrop':_0x12fcc7(0x141),'allowOutsideClick':![]});}}):(_0x193709>0xc&&(_0x193709-=0xc),$[_0x4fcb56(0x136)]({'type':'GET','url':_0x4fcb56(0x13d),'success':function(_0xda5366){var _0x51a188=_0x4fcb56;let _0x57f0e0=_0xda5366[_0x51a188(0x15e)][_0x5ab0fc]['media'][0x0][_0x51a188(0x14e)][_0x51a188(0x14c)];Swal[_0x51a188(0x14b)]({'title':'Please\x20\x20Wait\x20Untill\x20\x20\x0a'+(_0x193709<0xa?'0'+_0x193709:_0x193709)+':'+(_0x3ffc46<0xa?'0'+_0x3ffc46:_0x3ffc46),'imageUrl':_0x57f0e0||_0x51a188(0x143),'imageWidth':0x190,'imageHeight':0xc8,'imageAlt':_0x51a188(0x150),'width':0x258,'padding':'3em','color':_0x51a188(0x159),'background':_0x51a188(0x148),'backdrop':'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20rgba(218,\x20218,\x20233,\x200.72)','allowOutsideClick':![]});},'error':function(_0x1a64f2){var _0x3fefeb=_0x4fcb56;console[_0x3fefeb(0x146)](_0x1a64f2);}}));}
+var requiredTime;
+$(document).ready(function(){
+    $("#btncalc").off().click(function(){
+        cacl();
+    })
+})
+
+
+function cacl() {
+    var out = document.getElementById("out").value.trim().toUpperCase();
+    var totalh = document.getElementById("totalh").value.trim().toUpperCase();
+    if (!(out.split(' ')[1])) {
+        alert("Please Enter Out Hours in 12 Hour Format");
+        return;
+    }
+
+    var timeType = document.getElementById("TimeType").value;
+    if (timeType == "1") {
+        requiredTime = 270;
+    }
+    else if (timeType == "2") {
+        requiredTime = 420;
+    }
+    else {
+        requiredTime = 510;
+    }
+
+    try {
+        var HourStringFromTotalHour = totalh.split('H');
+        var totalhour = HourStringFromTotalHour[0].includes('M') ? 0 : parseInt(HourStringFromTotalHour[0]);
+        totalhour = parseInt(totalhour) > 12 ? parseInt(totalhour) - 12 : totalhour;
+        var miniuteStringFromTotalHour = HourStringFromTotalHour[0].includes('M') ? HourStringFromTotalHour[0] : HourStringFromTotalHour[1];
+        var miniute = miniuteStringFromTotalHour.includes('M') ? parseInt(miniuteStringFromTotalHour.split('M')[0]) : 0;
+        var totalminute = miniute + (parseInt(totalhour) * 60);
+    }
+    catch {
+        alert("Please enter valid format! check video below!")
+        return;
+    }
+    if (isNaN(totalhour) || isNaN(totalminute)) {
+        alert("Please enter valid format! check video below!")
+        return;
+    }
+
+    var outhour = parseInt(out.split(':')[0]);
+    outhour = outhour > 12 ? outhour - 12 : outhour;
+    var outminute = parseInt(out.split(':')[1]);
+    var remaining = requiredTime - totalminute + 1;
+    var lastHour = Math.floor(remaining / 60);
+    var lastMinute = remaining % 60;
+
+
+    outhour += lastHour;
+    outminute += lastMinute;
+    if (outminute >= 60) {
+        outhour++;
+        outminute -= 60;
+    }
+    var rendomNum = Math.ceil(Math.random() * 49);
+    var d = new Date();
+    let hour = d.getHours() < 12 ? d.getHours() : d.getHours() - 12;
+    let totalminute1 = d.getMinutes();
+        
+    if (hour > outhour || (hour == outhour && totalminute1 >= outminute)) {
+        $.ajax({
+            type: "Get",
+            url: "https://g.tenor.com/v1/search?q=gohome&key=LIVDSRZULELA&limit=50",
+            success: function (response) {
+                var GoGifUrl = response.results[rendomNum].media[0].gif.url;
+                Swal.fire({
+                            text: "You can leave, You already done with hours",
+                            imageUrl: GoGifUrl || 'https://i.redd.it/d4bezp9infx41.png',
+                            imageWidth: 400,
+                            imageHeight: 200,
+                            imageAlt: 'Custom image',
+                            width: 600,
+                            padding: '3em',
+                            color: '#716add',
+                            background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
+                            backdrop: `
+                    rgba(0,0,123,0.4)`,
+                            allowOutsideClick: false
+                        })
+            }
+        });
+
+        //#region Old Code 
+        // fetch(`https://g.tenor.com/v1/search?q=gohome&key=LIVDSRZULELA&limit=50`).then((res) => {
+        //     return res.json()
+        // }).then((data) => {
+        //     var obj = data.results[Math.ceil(Math.random() * 49)];
+        //     var str = obj.media[0].gif.url;
+        //     Swal.fire({
+        //         text: "You can leave, You already done with hours",
+        //         imageUrl: str || 'https://i.redd.it/d4bezp9infx41.png',
+        //         imageWidth: 400,
+        //         imageHeight: 200,
+        //         imageAlt: 'Custom image',
+        //         width: 600,
+        //         padding: '3em',
+        //         color: '#716add',
+        //         background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
+        //         backdrop: `
+        // rgba(0,0,123,0.4)`,
+        //         allowOutsideClick: false
+        //     })
+        // })
+        //#endregion
+
+    }
+    else {
+        if (outhour > 12) {
+            outhour -= 12;
+        }
+        
+        
+        $.ajax({
+            type: "GET",
+            url: "https://g.tenor.com/v1/search?q=dontgo&key=LIVDSRZULELA&limit=50",
+            success: function (response) {
+                
+                let StayGifUrl = response.results[rendomNum].media[0].gif.url;
+                Swal.fire({
+                    title: "Please  Wait Untill  \n" + (outhour < 10 ? ("0" + outhour) : outhour) + ':' + (outminute < 10 ? ("0" + outminute) : outminute),
+                    imageUrl: StayGifUrl || './gallery/jaldi.jpg',
+                    imageWidth: 400,
+                    imageHeight: 200,
+                    imageAlt: 'Custom image',
+                    width: 600,
+                    padding: '3em',
+                    color: '#716add',
+                    background: '#fff url(./gallery/O9FG4W0.jpg)',
+                    backdrop: `
+                    rgba(218, 218, 233, 0.72)`,
+                    allowOutsideClick: false
+                })
+            },
+            error : function(error){
+                console.log(error)
+            }
+        });
+        //#region  Old Code
+        // fetch(`https://g.tenor.com/v1/search?q=dontgo&key=LIVDSRZULELA&limit=50`).then((res) => {
+        //     return res.json()
+        // }).then((data) => {
+        //     var obj = data.results[Math.ceil(Math.random() * 49)];
+        //     var str = obj.media[0].gif.url; 
+            // Swal.fire({
+            //     title: "Please  Wait Untill  \n" + (outhour < 10 ? ("0" + outhour) : outhour) + ':' + (outminute < 10 ? ("0" + outminute) : outminute),
+            //     imageUrl: StayGifUrl,
+            //     imageWidth: 400,
+            //     imageHeight: 200,
+            //     imageAlt: 'Custom image',
+            //     width: 600,
+            //     padding: '3em',
+            //     color: '#716add',
+            //     background: '#fff url(./gallery/O9FG4W0.jpg)',
+            //     backdrop: `
+            //     rgba(218, 218, 233, 0.72)`,
+            //     allowOutsideClick: false
+            // })
+        // });
+        //#endregion
+    }
+}
