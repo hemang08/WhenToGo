@@ -60,7 +60,7 @@ function cacl() {
     var d = new Date();
     let hour = d.getHours() < 12 ? d.getHours() : d.getHours() - 12;
     let totalminute1 = d.getMinutes();
-         outhour = outhour > 12 ? outhour - 12 : outhour;
+         
     if (hour > outhour || (hour == outhour && totalminute1 >= outminute)) {
         $.ajax({
             type: "Get",
