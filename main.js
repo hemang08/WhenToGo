@@ -43,6 +43,10 @@ function cacl() {
     }
 
     var outhour = parseInt(out.split(':')[0]);
+    var AMorPM =out.split(' ')[1]
+    if(AMorPM == 'PM'){
+        outhour += 12;
+    }
     // outhour = outhour > 12 ? outhour - 12 : outhour;
     var outminute = parseInt(out.split(':')[1]);
     var remaining = requiredTime - totalminute + 1;
