@@ -111,13 +111,9 @@ function cacl() {
 
     }
     else {
-        let time = 'AM'
-        console.log(OutTimeFormat.getUTCHours());
-        if(OutTimeFormat.getHours() >12 ){
-            time ="PM";
-            outhour = OutTimeFormat.getHours() -12;
+        if (outhour > 12) {
+            outhour -= 12;
         }
-
 
         $.ajax({
             type: "GET",
