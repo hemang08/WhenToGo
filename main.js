@@ -117,6 +117,9 @@ function cacl() {
             time ="PM";
             outhour = OutTimeFormat.getHours() -12;
         }
+        else if(OutTimeFormat.getHours() == 12){
+            time ="PM";
+        }
 
 
         $.ajax({
