@@ -43,11 +43,7 @@ function cacl() {
     }
 
     var outhour = parseInt(out.split(':')[0]);
-    var AMorPM =out.split(' ')[1]
-    if(AMorPM == 'PM'){
-        outhour += 12;
-    }
-    // outhour = outhour > 12 ? outhour - 12 : outhour;
+     outhour = outhour > 12 ? outhour - 12 : outhour;
     var outminute = parseInt(out.split(':')[1]);
     var remaining = requiredTime - totalminute + 1;
     var lastHour = Math.floor(remaining / 60);
@@ -62,12 +58,12 @@ function cacl() {
     }
     var rendomNum = Math.ceil(Math.random() * 49);
     var d = new Date();
-    // let hour = d.getHours() < 12 ? d.getHours() : d.getHours() - 12;
+    let hour = d.getHours() < 12 ? d.getHours() : d.getHours() - 12;
     let totalminute1 = d.getMinutes();
     let OutTimeFormat = new Date();
     OutTimeFormat.setHours(outhour, outminute, 0)
-    // if (hour > outhour || (hour == outhour && totalminute1 >= outminute)) {
-    if (d > OutTimeFormat) {
+     if (hour > outhour || (hour == outhour && totalminute1 >= outminute)) {
+    // if (d > OutTimeFormat) {
         $.ajax({
             type: "Get",
             url: "https://g.tenor.com/v1/search?q=gohome&key=LIVDSRZULELA&limit=50",
@@ -121,9 +117,6 @@ function cacl() {
             time ="PM";
             outhour = OutTimeFormat.getHours() -12;
         }
-        else if(OutTimeFormat.getHours() == 12){
-            time ="PM";
-        }
 
 
         $.ajax({
@@ -133,7 +126,7 @@ function cacl() {
 
                 let StayGifUrl = response.results[rendomNum].media[0].gif.url;
                 Swal.fire({
-                    title: "Please  Wait Untill  \n" + (outhour < 10 ? ("0" + outhour) : outhour) + ':' + OutTimeFormat.getUTCMinutes() +' '+time,
+                    title: "Please  Wait Untill  \n" + (outhour < 10 ? ("0" + outhour) : outhour) + ':' + (outminute < 10 ? ("0" + outminute) : outminute),
                     imageUrl: StayGifUrl || './gallery/jaldi.jpg',
                     imageWidth: 400,
                     imageHeight: 200,
