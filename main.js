@@ -1,6 +1,6 @@
 var requiredTime;
-$(document).ready(function(){
-    $("#btncalc").off().click(function(){
+$(document).ready(function () {
+    $("#btncalc").off().click(function () {
         cacl();
     })
 })
@@ -43,7 +43,7 @@ function cacl() {
     }
 
     var outhour = parseInt(out.split(':')[0]);
-    outhour = outhour > 12 ? outhour - 12 : outhour;
+    // outhour = outhour > 12 ? outhour - 12 : outhour;
     var outminute = parseInt(out.split(':')[1]);
     var remaining = requiredTime - totalminute + 1;
     var lastHour = Math.floor(remaining / 60);
@@ -58,29 +58,31 @@ function cacl() {
     }
     var rendomNum = Math.ceil(Math.random() * 49);
     var d = new Date();
-    let hour = d.getHours() < 12 ? d.getHours() : d.getHours() - 12;
+    // let hour = d.getHours() < 12 ? d.getHours() : d.getHours() - 12;
     let totalminute1 = d.getMinutes();
-         
-    if (hour > outhour || (hour == outhour && totalminute1 >= outminute)) {
+    let OutTimeFormat = new Date();
+    OutTimeFormat.setHours(outhour, outminute, 0)
+    // if (hour > outhour || (hour == outhour && totalminute1 >= outminute)) {
+    if (d > OutTimeFormat) {
         $.ajax({
             type: "Get",
             url: "https://g.tenor.com/v1/search?q=gohome&key=LIVDSRZULELA&limit=50",
             success: function (response) {
                 var GoGifUrl = response.results[rendomNum].media[0].gif.url;
                 Swal.fire({
-                            text: "You can leave, You already done with hours",
-                            imageUrl: GoGifUrl || 'https://i.redd.it/d4bezp9infx41.png',
-                            imageWidth: 400,
-                            imageHeight: 200,
-                            imageAlt: 'Custom image',
-                            width: 600,
-                            padding: '3em',
-                            color: '#716add',
-                            background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
-                            backdrop: `
+                    text: "You can leave, You already done with hours",
+                    imageUrl: GoGifUrl || 'https://i.redd.it/d4bezp9infx41.png',
+                    imageWidth: 400,
+                    imageHeight: 200,
+                    imageAlt: 'Custom image',
+                    width: 600,
+                    padding: '3em',
+                    color: '#716add',
+                    background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
+                    backdrop: `
                     rgba(0,0,123,0.4)`,
-                            allowOutsideClick: false
-                        })
+                    allowOutsideClick: false
+                })
             }
         });
 
@@ -109,19 +111,22 @@ function cacl() {
 
     }
     else {
-        if (outhour > 12) {
-            outhour -= 12;
+        let time = 'AM'
+        console.log(OutTimeFormat.getUTCHours());
+        if(OutTimeFormat.getHours() >12 ){
+            time ="PM";
+            outhour = OutTimeFormat.getHours() -12;
         }
-        
-        
+
+
         $.ajax({
             type: "GET",
             url: "https://g.tenor.com/v1/search?q=dontgo&key=LIVDSRZULELA&limit=50",
             success: function (response) {
-                
+
                 let StayGifUrl = response.results[rendomNum].media[0].gif.url;
                 Swal.fire({
-                    title: "Please  Wait Untill  \n" + (outhour < 10 ? ("0" + outhour) : outhour) + ':' + (outminute < 10 ? ("0" + outminute) : outminute),
+                    title: "Please  Wait Untill  \n" + (outhour < 10 ? ("0" + outhour) : outhour) + ':' + OutTimeFormat.getUTCMinutes() +' '+time,
                     imageUrl: StayGifUrl || './gallery/jaldi.jpg',
                     imageWidth: 400,
                     imageHeight: 200,
@@ -135,7 +140,7 @@ function cacl() {
                     allowOutsideClick: false
                 })
             },
-            error : function(error){
+            error: function (error) {
                 console.log(error)
             }
         });
@@ -145,20 +150,20 @@ function cacl() {
         // }).then((data) => {
         //     var obj = data.results[Math.ceil(Math.random() * 49)];
         //     var str = obj.media[0].gif.url; 
-            // Swal.fire({
-            //     title: "Please  Wait Untill  \n" + (outhour < 10 ? ("0" + outhour) : outhour) + ':' + (outminute < 10 ? ("0" + outminute) : outminute),
-            //     imageUrl: StayGifUrl,
-            //     imageWidth: 400,
-            //     imageHeight: 200,
-            //     imageAlt: 'Custom image',
-            //     width: 600,
-            //     padding: '3em',
-            //     color: '#716add',
-            //     background: '#fff url(./gallery/O9FG4W0.jpg)',
-            //     backdrop: `
-            //     rgba(218, 218, 233, 0.72)`,
-            //     allowOutsideClick: false
-            // })
+        // Swal.fire({
+        //     title: "Please  Wait Untill  \n" + (outhour < 10 ? ("0" + outhour) : outhour) + ':' + (outminute < 10 ? ("0" + outminute) : outminute),
+        //     imageUrl: StayGifUrl,
+        //     imageWidth: 400,
+        //     imageHeight: 200,
+        //     imageAlt: 'Custom image',
+        //     width: 600,
+        //     padding: '3em',
+        //     color: '#716add',
+        //     background: '#fff url(./gallery/O9FG4W0.jpg)',
+        //     backdrop: `
+        //     rgba(218, 218, 233, 0.72)`,
+        //     allowOutsideClick: false
+        // })
         // });
         //#endregion
     }
