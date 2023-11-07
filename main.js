@@ -9,14 +9,21 @@ function cacl() {
 
     var timeType = document.getElementById("TimeType").value;
     if (timeType == "1") {
-        requiredTime = 270;
+        requiredTime = 240;
     }
     else if (timeType == "2") {
         requiredTime = 420;
     }
-    else {
+    else if(timeType == "0"){
+        requiredTime = 480;
+    }
+    else if(timeType == "3"){
         requiredTime = 510;
     }
+    else{
+        requiredTime = 270;
+    }
+    
 
     try {
         var HourStringFromTotalHour = totalh.split('H');
